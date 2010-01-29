@@ -1,0 +1,26 @@
+<div id="content_scrolling">
+  <%= image_tag 'leaf.png',:alt => 'Fat not gas logo', :class=>'right'%>
+  <h2>Make a difference today!</h2>
+  <p>By biking <%=@commute.milesPD%> miles a day, you'd make the following savings in just one year.</p>
+    
+   <%= render :partial => "commute" %>
+      <center>
+        <p>Tell us what you think by <a href="http://davidquail.com/2009/12/12/burn-fat-not-gas-launched/">commenting on the blog ....</a>
+        <%= fb_connect_javascript_tag %>
+<%= init_fb_connect "XFBML"%>
+<%= fb_login_and_redirect(commutes_path) %>
+        </p>
+      </center>
+  <p class ="subtitle">
+    The calculations you see are based on the average fuel economy of a North American vehicle,
+    the average fuel cost of $3.00/gallon, 35 miles per gallon average, the average energy expended by a 30 year old male biking, and
+    the average person requiring 1000 calories consumed to burn 1 lb of fat.  <%=  link_to "Read more about our calculations", "/calculations.html"%>
+    or <a href="mailto:quail.david@gmail.com?subject=Fat Not Gas calculation">contact us</a> if you'd like to see
+    more accurate results.
+  </p>
+<%= fb_connect_javascript_tag %>
+<%= init_fb_connect "XFBML"%>
+<%= fb_login_and_redirect(commutes_path) %>
+<fb:login-button></fb:login-button>
+<a href="#" onclick="FB.Connect.requireSession(); return false;" class="fbconnect_login_button FBConnectButton FBConnectButton_Small"> <span id="RES_ID_fb_login_text" class="FBConnectButton_Text">Connect with Facebook</span> </a>
+</div>

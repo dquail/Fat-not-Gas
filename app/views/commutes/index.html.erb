@@ -1,0 +1,43 @@
+<div id="content_left">
+  <p><p>
+
+<!--
+  <form action="/commutes" class="new_commute" id="new_commute" method="post"><div style="margin:0;padding:0;display:inline"><input name="authenticity_token" type="hidden" value="2nAxR9LosadkYiSFN1x9yDwZhK0oPAduHx8HTYS/7NI=" /></div>
+    <p>
+      <input id="miles_pd" name="miles_pd" size="15" MAXLENGTH=3 type="text" value = "Miles from home to work"
+      onKeyPress="return checkTextForNumeric(event)"
+    onFocus="this.select()"/>
+    </p>
+    <p>
+      <input id="commute_submit" name="commit" type="submit" value="Calculate savings" />
+    </p>
+  </form>
+-->
+  <div class = "calculate_form">
+      How much can I save by biking to work?
+        <% form_for(@commute, :html => { :class => 'new_commute' }) do |f| %>
+          <p>
+              <input id="miles_pd" name="miles_pd" size="15" MAXLENGTH=3 type="text" value = "Miles from home to work"
+              onKeyPress="return checkTextForNumeric(event)"
+            onFocus="this.select()"/>
+          </p>
+            <%= f.submit 'Calculate savings' %>
+        <% end %>
+   </div>
+
+</div>
+
+  <!-- END CONTENT LEFT -->
+<!--<div id="content_right">-->
+<div id="content_right">
+      <div id="home_copy_holder">
+      <%= image_tag 'FatNotGasLogo.png',:alt => 'Fat not gas logo'%>
+      <p>Save trees, atmosphere, and money, while burning fat and getting healthy.  Join the fat not gas movement and start biking to work.
+      </p>
+      <p></p>
+
+      <p>|<a href="http://davidquail.com/2009/12/12/burn-fat-not-gas-launched/">   Learn more   </a>| </p>
+ </div>
+</div>
+  <!-- END CONTENT RIGHT -->
+  <div class="clear"></div>

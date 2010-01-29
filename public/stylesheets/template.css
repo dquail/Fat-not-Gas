@@ -1,0 +1,307 @@
+	body {
+		margin:0px;
+		padding:0px;
+		font-family:Verdana, Arial, sans-serif;
+		color:#666;
+		background-color:#000000;
+	}
+	
+	a, img  {
+	border:none;
+	}
+	
+	a:active, a:focus {
+	outline:none;
+	color: #C03;
+	}
+	
+	/***************************** HEADER **********************************/
+	#header {
+		background-color:#000000;
+		height:90px;
+		margin:0 auto;
+		width:1000px;
+		font-size: 12px;
+	}
+	#header_content{
+		margin:0 auto;
+		width:1000px;
+	}
+	#header.fixed{
+		position:fixed;
+		width:100%;
+		z-index:2;
+	}
+	#header #logo {
+		float: left;
+		margin-top: 0px;
+		margin-left: 20px;
+		padding-top: 25px;
+		text-align: center;
+	}
+	
+	
+	/***************************** NAV **********************************/
+	
+	#main_nav {
+		color:#ffffff;
+		float: right;
+		list-style-type:none;
+		padding:0px;
+		margin-bottom:0px;
+		padding-top: 70px;
+		text-align: right;
+	}
+	#main_nav a{
+		color:#FFF;
+		text-decoration:none;
+	}
+
+	
+	#footer_nav {
+		color:#FFF;
+		float: right;
+		width:1000px;
+		list-style-type:none;
+		padding:0px;
+		margin-bottom:10px;
+		height:20px;
+		font-size: 12px;
+		text-align: right;
+	}
+	#footer_nav a{
+		color:#FFF;
+		text-decoration:none;
+	}
+	/***************************** CONTENT **********************************/
+	.anchor
+	{
+		position:relative;
+		top:-90px;
+	}
+	#content_outer{
+		background-color:#fff;
+		min-height:600px;
+	}
+	
+	#content_inner{
+	font-size:18px;
+	padding-bottom: 10px;
+	padding-top: 15px;
+	background-color:#fff;
+	margin: 0 auto;
+	width: 1000px;
+	}
+	#content {
+	}
+	
+	#content_inner a {
+		color:#024769;
+		text-decoration:none;
+	}
+	
+	#content_left {
+		width:232px;
+		float:left;
+		padding-top:30px;
+		margin-left:146px;
+		background-color: #fff;
+	}
+	
+	#content_right {
+	padding-top:65px;
+	width:650px;
+	float:left;
+	background:#ffffff;
+	}
+	
+	.clear{
+		clear:both;
+	}
+	
+	
+	#content_left {
+	width:299px;
+	padding-top:145px;
+	margin-left:10px;
+	float: left;
+	margin-bottom: 10px;
+	}
+	
+	#home_copy_holder {
+	width:625px;
+	text-align: center;
+	margin-top: 30px;
+	margin-bottom: 40px;
+	}
+	
+	#home_copy_holder p
+	{
+		padding-top:5px;
+		padding-bottom:5px;
+		margin-left:50px;
+		/*margin-rignt:20px;*/
+		margin-right: 50px;
+	}
+	
+	
+	/***************************** FORMS ***********************************/
+	
+	.calculate_form{
+		background-image: url(../images/leaf.png);
+		background-repeat: no-repeat;
+		background-position: right bottom;
+		background-color:#f2f5fc;
+		border:1px solid #CCCCCC;
+		/*color:#003366;*/
+		font-size:14px;
+		padding:15px;
+		text-align:center;
+		width:190px;
+        float: left;
+		
+	}
+
+    .errorMessage
+	{
+		color:red;
+	}
+	
+	#content_scrolling
+	{
+		width:600px;
+		margin: 0 auto;;
+		min-height:450px;
+		vertical-align:middle;
+	}
+
+    .commute
+    {
+        margin-left:80px;
+        width:400px;
+        height:350px;
+        text-align:left;
+    }
+    .commute #distance
+    {
+        background-image: url(../images/car.jpg);
+        background-position: center left;
+        background-repeat: no-repeat;
+        width:400px;
+        height:40px;
+        padding-left:90px;
+        padding-top:30px;
+    }
+    .commute #dollars
+    {
+        background-image: url(../images/dollar.png);
+        background-position: center left;
+        background-repeat: no-repeat;
+        width:400px;
+        height:40px;
+        padding-left:90px;
+        padding-top:30px;
+    }
+    .commute #trees
+    {
+        background-image: url(../images/tree.jpg);
+        background-position: center left;
+        background-repeat: no-repeat;
+        width:400px;
+        height:40px;
+        padding-left:90px;
+        padding-top:30px;
+    }
+    .commute #barrels
+    {
+        background-image: url(../images/barrel.jpg);
+        background-position: center left;
+        background-repeat: no-repeat;
+        width:400px;
+        height:40px;
+        padding-left:90px;
+        padding-top:30px;    }
+    .commute #calories
+    {
+        background-position: top left;
+        background-position: center left;
+        background-repeat: no-repeat;
+        width:400px;
+        height:40px;
+        padding-left:90px;
+        padding-top:30px;    }
+    .commute #fat
+    {
+        background-image: url(../images/fat.jpg);
+        background-position: center left;
+        background-repeat: no-repeat;
+        width:400px;
+        height:40px;
+        padding-left:90px;
+        padding-top:30px;    }
+    img .right
+    {
+        float: right;
+    }
+	#content_scrolling h2
+	{
+		color:#024769;
+	}
+	#content_scrolling h3
+	{
+		color:#024769;
+		font-style:italic;
+	}
+	#content_scrolling p
+	{
+		font-size:14px;
+		padding:10px;
+		margin:5px;
+	}
+	#content_scrolling img.right
+	{
+		margin: 5px;
+		float: right;
+		padding:10px;
+	}
+	
+	#content_scrolling img.left
+	{
+		margin: 5px;
+		float: left;
+		padding:10px;
+	}
+
+    #content_scrolling .subtitle
+    {
+        border:solid;
+        text-align:center;
+        font-size:10px;
+        font-style:italic;
+    }
+	/*************DOWNLOAD PAGE*************/
+.center{
+	text-align:center;
+}
+
+	
+	
+	/***************************** FOOTER **********************************/
+	
+	
+	#footer_outer
+	{
+		width:100%;
+		background-color:#000000;
+	}
+	
+	.footer {
+		margin: 0 auto;
+		width:1000px;
+		height:30px;
+		text-align:left;
+		background-color:#000000;
+		clear:both;
+		padding-top: 5px;
+	}
+	/***************************** IMAGE CLASSES **********************************/

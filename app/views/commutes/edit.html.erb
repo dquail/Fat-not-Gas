@@ -1,0 +1,12 @@
+<h1>Editing commute</h1>
+
+<% form_for(@commute) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.submit 'Update' %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @commute %> |
+<%= link_to 'Back', commutes_path %>
